@@ -112,7 +112,7 @@ public class Main {
         System.out.println("После вызова метода");
         System.out.println("Количество мяуканий: " + meowCount.getMeowCount() + "\n");
 
-        /* Задание 3.5*/
+        /* Задание 3.5 */
         System.out.println("Задание 3.5 Список");
         List<Object> list = new ArrayList<>();
 
