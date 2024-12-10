@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+
 public class ReadFileUt {
     public static String readFile(String file) throws IOException {
         StringBuilder content = new StringBuilder();

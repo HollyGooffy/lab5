@@ -3,7 +3,7 @@ package ru.lab5.zadanie_1;
 public class Fraction implements FractionInterface {
     private int chislitel;
     private int znamenatel;
-    private Double cach_value;
+    private Double cach_value;//добавить новый класс с кешированием
 
     Fraction() {
         this.chislitel = 0;
@@ -120,7 +120,7 @@ public class Fraction implements FractionInterface {
     @Override
     public double getValue() {
         if (cach_value == null) {
-            cach_value = (double) cach_value / znamenatel;
+            cach_value = (double) chislitel / znamenatel;
         }
         return cach_value;
     }

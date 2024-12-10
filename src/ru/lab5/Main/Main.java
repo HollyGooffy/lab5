@@ -16,6 +16,12 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
+        /*
+        Задание 1.1 добавить отдельный класс для кэширования
+        задание 6.5 сделать нетипизированную очередь и сделать отдельный метод для работы
+
+        */
+
 
         /* Задание 1.1 */
         System.out.println("Задание 1.1 Дробь");
@@ -147,7 +153,7 @@ public class Main {
         try {
             String text = ReadFileUt.readFile(file);
             String[] words = text.split("\\s+");
-            Set<Character> zvonkiyLetters = new HashSet<>(Arrays.asList('б', 'в', 'г', 'д', 'ж', 'з'));
+            Set<Character> zvonkiyLetters = new HashSet<>(Arrays.asList('б', 'в', 'г', 'д', 'ж', 'з','л','м','н','р','й'));
             /*
                 'б', - 2
                 'в', - 6
@@ -188,6 +194,8 @@ public class Main {
 
 
         /* Задание 6.5 */
+
+        // сделать нетипизированные списки
         System.out.println("Задание 6.5 Очередь");
         Queue<Object> queue = new LinkedList<>();
         Queue<Object> queue2 = new LinkedList<>();
@@ -252,7 +260,6 @@ public class Main {
         }
         return polyline;
     }
-
 
 }
 

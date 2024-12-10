@@ -2,6 +2,8 @@ package ru.lab5.zadanie_6;
 
 import java.util.Scanner;
 
+
+// добавить отдельный метод по задаче. Сделать методом так, чтобы очередь 1 превратилась в обратную очередь в очереди2
 public class QueueOp {
     public static Object readObjectInQueue(Scanner scanner) {
         String in = scanner.nextLine();

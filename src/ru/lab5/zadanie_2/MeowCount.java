@@ -1,5 +1,7 @@
 package ru.lab5.zadanie_2;
 
+
+// тут все правильно, подсчет мяуканий идет отдельным классом
 public class MeowCount implements Meowing{
     private Meowing meowing;
     private int meowCount;
