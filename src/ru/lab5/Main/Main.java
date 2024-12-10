@@ -151,7 +151,7 @@ public class Main {
             /*
                 'б', - 2
                 'в', - 6
-                'г', - 1te
+                'г', - 1
                 'д', - 3
                 'ж', - 1
                 'з' - 2
@@ -222,10 +222,15 @@ public class Main {
         System.out.println("Задание 7.1 Стрим Поинт");
         List<Point> points = Arrays.asList(
                 new Point(1,1),
-                new Point(1,1),
+                new Point(3,3),
                 new Point(-5,-4),
                 new Point(1,9),
                 new Point(9,1));
+
+        System.out.println("Исходные точки: ");
+        for (Point point : points) {
+            System.out.println(point.getPointString());
+        }
 
         List<Point> result  = points.stream()
                 .filter(p -> p.getX() != 0 && p.getY() != 0 && p.getX() != p.getY()) // удаляем если x = y
@@ -235,9 +240,6 @@ public class Main {
 
         PolyLine polyLine = createPolyne(result);
         System.out.println("Точки в ломанной: " + polyLine.toString());
-
-
-        /* Задание 7.2 */
 
 
     }
